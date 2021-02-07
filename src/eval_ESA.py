@@ -32,7 +32,7 @@ parser.add_argument("--label_path",
                     required=True,
                     help="The label name file. Multiple words for the same label should be split by space")
 parser.add_argument("--esa_path",
-                    default='../model/ESA/',
+                    default='../model/ESA_WikiCate/',
                     type=str,
                     required=False,
                     help="Directory that stores ESA data")
