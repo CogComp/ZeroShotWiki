@@ -155,7 +155,6 @@ def ESA_cosine():
             true[i, labels[i]] = 1
         acc = f1_score(true, pred, average='weighted')
         print('Multi-label f1:', acc)
-        # print(multilabel_confusion_matrix(true, pred))
     
     else:      
         hit_size = 0
