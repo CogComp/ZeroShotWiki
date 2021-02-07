@@ -1,4 +1,4 @@
-# Code and data for ACL submission: Learning Zero-shot Text Classification from Wikipedia
+## Code and data for ACL submission: Learning Zero-shot Text Classification from Wikipedia
 ## Setup the environment
 xxx
 ## Using our models
