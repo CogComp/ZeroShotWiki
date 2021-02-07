@@ -13,7 +13,7 @@ CUDA_VISIBLE_DEVICES=xxx python src/eval_TE.py --data_path data/yahoo/test.txt -
 ```
 For the multi-labeled *Situation* dataset, add ```--multi_label``` to the above two commands. 
 ## Training
-We provide the data for training TE-WikiCate ([Wikipedia.zip](http://...)), which is about 12GB. To train your own model, extract the zip file under ```data``` directory and run
+We provide the data for training TE-WikiCate ([wikipedia.zip](http://...)), which is about 12GB. To train your own model, extract the zip file under ```data``` directory and run
 ```
 CUDA_VISIBLE_DEVICES=xxx python src/train_wiki_entailment.py --save_dir SAVE_DIR
 ```
