@@ -39,8 +39,7 @@ def get_hypothesis(label_file, simple_hypo=False):
         if simple_hypo:
             type2hypothesis[i] = [' or '.join(words)]
         else:
-            type2hypothesis[i] = ['it is related with ' + ' or '.join(words)]
-        
+            type2hypothesis[i] = ['it is related with ' + ' or '.join(words)]       
     return type2hypothesis
         
     
