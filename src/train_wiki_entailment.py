@@ -228,11 +228,11 @@ def main():
 
 
     parser.add_argument("--data_file",
-                        default="../data/wikipedia/tokenized_wiki.txt",
+                        default="data/wikipedia/tokenized_wiki.txt",
                         type=str,
                         help="Path to tokenized wikipedia articles")
     parser.add_argument("--cate_file",
-                        default="../data/wikipedia/page2content_cate.json",
+                        default="data/wikipedia/page2content_cate.json",
                         type=str,
                         help="Path to category structure")
     parser.add_argument("--train_steps",
@@ -240,10 +240,14 @@ def main():
                         type=int,
                         help="Number of train steps for early stopping")
     parser.add_argument("--save_dir",
-                        default='../model/new_model',
+                        default='model/new_model',
                         type=str,
                         required=True,
                         help="Directory to save the trained model")
+    parser.add_argument("--temp_file",
+                        default=None,
+                        type=str,
+                        help="Directory to save the tensorized trainingd data")
     parser.add_argument("--cache_dir",
                         default="",
                         type=str,
@@ -286,11 +290,8 @@ def main():
                         default=1,
                         help="Number of updates steps to accumulate before performing a backward/update pass.")
     args = parser.parse_args()
-
-    if not os.path.isdir('../temp'):
-        os.makedirs('../temp')
-               
-    train_loader_file = '../temp/TE_train.pt'
+              
+    train_loader_file = args.temp_file
 
     if args.local_rank == -1 or args.no_cuda:
         device = torch.device("cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu")
@@ -438,10 +439,7 @@ def main():
             global_step += 1
             
                 
-        if stop_train:
-            with open('../loss.txt', 'w') as loss_out:
-                loss_out.write(','.join(loss_hist))
-            
+        if stop_train:          
             break
     
     if args.save_dir:

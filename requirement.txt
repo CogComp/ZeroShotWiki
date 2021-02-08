@@ -1,0 +1,8 @@
+torch>=1.6.0
+transformers==3.0.2
+scikit-learn>=0.23.1
+numpy>=1.18.5
+scipy>=1.5.0
+joblib >= 0.16.0
+nltk>=3.5
+tqdm>=4.48.0
