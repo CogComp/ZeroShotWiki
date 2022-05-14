@@ -1,4 +1,4 @@
-## Code and data for ACL submission: Learning Zero-shot Text Classification from Wikipedia
+## Code and data for NAACL 2022 Demo: Towards Open Domain Topic Classification
 ## Requirements
 To install required Python packages, run
 ```
