@@ -2,7 +2,7 @@
 ## Requirements
 To install required Python packages, run
 ```
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 We recommend to create a new conda environment of Python 3.7 to avoid potential incompatibility.
 ## Using our models
