@@ -245,7 +245,7 @@ def main():
                         required=True,
                         help="Directory to save the trained model")
     parser.add_argument("--temp_file",
-                        default=None,
+                        default='',
                         type=str,
                         help="Directory to save the tensorized trainingd data")
     parser.add_argument("--cache_dir",
