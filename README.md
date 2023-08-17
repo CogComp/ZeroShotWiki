@@ -6,6 +6,8 @@ pip install -r requirement.txt
 ```
 We recommend to create a new conda environment of Python 3.7 to avoid potential incompatibility.
 ## Using our models
+*To download datasets/models on this page, please right-click on the links to "Save link as ..."*
+
 Users can download our pre-trained ESA-WikiCate and TE-WikiCate models ([model.zip](http://cogcomp.org/models/ZeroShotWiki/model.zip)), and evaluation data ([data.zip](http://cogcomp.org/models/ZeroShotWiki/data.zip)). 
 To evaluate ESA_WikiCate, for example, run
 ```
